@@ -1,0 +1,125 @@
+.card{
+    width: 100%;
+    height: 23rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.2);
+    position: relative;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.cardContainer{
+    position: relative;
+    width: 80%;
+    height: 24rem;
+    justify-self: center;
+}
+
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.card.details{
+    height: auto;
+    cursor:auto;
+    margin: 0 auto;
+}
+
+.btnSale{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 0 auto;
+    border:none;
+    cursor:pointer;
+}
+
+.cardBody.details span:nth-of-type(2){
+    font-weight: bold;
+}
+
+.cardHead{
+    width: 100%;
+    height: 15rem;
+}
+.productPhoto{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background-color: var(--white);
+}
+.cardBody.details{
+    width: 90%;
+    gap:0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+}
+
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:var(--secondary-color);
+}
+
+.paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+    color:var(--secondary-color-opacity);
+    text-align: justify;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn_delete_product{
+    width: 100%;
+    border: 2px solid var(--secondary-color-opacity);
+    background-color: transparent;
+    text-align: center;
+    color:var(--secondary-color-opacity);
+    padding: 0.5rem;
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom:-1.5rem;
+    border-radius: 0.5rem;
+    cursor:pointer;
+    margin:auto;
+}   
+
+.textId{
+    display: none;
+}
+
+@media (min-width:768px){
+    .card{
+        overflow: hidden;
+    }
+    .card.details{
+        width: 20rem;
+       
+    }
+    .cardContainer{
+        width: 100%;       
+    }  
+    .cardBody.details{
+        padding-left: 0;
+        padding-top: 0;
+        padding-right:0;
+        padding-bottom: 2rem;
+    }
+}

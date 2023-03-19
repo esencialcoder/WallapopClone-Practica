@@ -1,0 +1,44 @@
+.alertContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+}
+
+.alert{
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.success{
+    background-color: rgb(17, 156, 17);
+}
+
+.loading{
+    background-color: var(--secondary-color);
+}
+.error  {
+    background-color: rgb(192, 12, 12);
+}
+
+.message {
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.hide{
+    opacity: 0;
+    z-index:-10;
+}

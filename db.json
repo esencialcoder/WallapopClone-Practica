@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "username": "antonio",
+      "password": "$2b$10$OWwTnJu1.IoBJTXAHZn0J.YrhJMwQhz1a7sjCaBZTai0WD/zK7EQC",
+      "id": 1
+    },
+    {
+      "username": "Pepe",
+      "password": "$2b$10$OWwTnJu1.IoBJTXAHZn0J.YrhJMwQhz1a7sjCaBZTai0WD/zK7EQC",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Bicicleta",
+      "description": "Bicicleta de paseo",
+      "price": "120,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679212689469.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T07:58:09.481Z",
+      "id": 1
+    },
+    {
+      "name": "Camisa de caballero",
+      "description": "Camisa para primavera",
+      "price": "35,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679212738639.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T07:58:58.650Z",
+      "id": 2
+    },
+    {
+      "name": "Guitarra acústica",
+      "description": "Guitarra con dos años de antiguedad",
+      "price": "195,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679212803603.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:00:03.612Z",
+      "id": 3
+    },
+    {
+      "name": "Camisa",
+      "description": "Camisa vaquera",
+      "price": "30,00 €",
+      "type": "Purchase",
+      "creator": "antonio",
+      "productStatus": "notbought",
+      "productPhoto": "http://127.0.0.1:8000//file-1679212844023.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:00:44.034Z",
+      "id": 4
+    },
+    {
+      "name": "Reloj",
+      "description": "Pack de relojes",
+      "price": "95,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679213310230.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:08:30.237Z",
+      "id": 6
+    },
+    {
+      "name": "Bicicleta",
+      "description": "Bicicleta de montaña",
+      "price": "420,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679213417791.png",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:10:17.799Z",
+      "id": 7
+    },
+    {
+      "name": "Zapatos",
+      "description": "Zapatos de cuero para caballeros",
+      "price": "180,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679213599582.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:13:19.592Z",
+      "id": 8
+    },
+    {
+      "name": "Pantalón",
+      "description": "Pantalón vaquero",
+      "price": "28,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679213989658.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:19:49.670Z",
+      "id": 9
+    },
+    {
+      "name": "Reloj",
+      "description": "Reloj de caballero",
+      "price": "192,00 €",
+      "type": "Sale",
+      "creator": "antonio",
+      "productStatus": "unsold",
+      "productPhoto": "http://127.0.0.1:8000//file-1679214053223.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:20:53.231Z",
+      "id": 10
+    },
+    {
+      "name": "Zapatos",
+      "description": "Zapatos de piel",
+      "price": "60,00 €",
+      "type": "Purchase",
+      "creator": "antonio",
+      "productStatus": "notbought",
+      "productPhoto": "http://127.0.0.1:8000//file-1679214487955.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T08:28:07.963Z",
+      "id": 12
+    },
+    {
+      "name": "Saxofón",
+      "description": "Saxofón alto",
+      "price": "200,00 €",
+      "type": "Purchase",
+      "creator": "antonio",
+      "productStatus": "notbought",
+      "productPhoto": "http://127.0.0.1:8000//file-1679219327251.jfif",
+      "userId": 1,
+      "updatedAt": "2023-03-19T09:48:47.333Z",
+      "id": 13
+    },
+    {
+      "name": "Guitarra",
+      "description": "Guitarra color azul",
+      "price": "100,00 €",
+      "type": "Purchase",
+      "creator": "Pepe",
+      "productStatus": "notbought",
+      "productPhoto": "http://127.0.0.1:8000//file-1679221469054.jfif",
+      "userId": 2,
+      "updatedAt": "2023-03-19T10:24:29.065Z",
+      "id": 14
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+ --primary-color: #fcf0f0;
+ --white: #fff;
+ --black:#000;
+ --secondary-color:#2f83b4;
+ --secondary-color-opacity:rgba(47, 133, 182, 0.5);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: var(--white);
+    padding: 0;
+}
+
+#app, #login, #signup, #productDetails, #createProductContent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 2rem;
+}
+
+.btn_login, .btn_signup, .btn_logout,.btn_paginate{  
+    font-size:0.8rem;
+    padding: 1rem 1rem;
+    border-radius:1rem;
+    background-color: var(--secondary-color);
+    color:var(--white);
+    border:none;
+    cursor: pointer;
+    font-weight:600;
+}
+
+.btn_login:hover{
+    background-color: var(--secondary-color-opacity);
+}
+.btn_signup:hover{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.btt_paginate:hover{
+    background-color: var(--secondary-color-opacity);
+}
+
+.btn_signup, .btn_logout{
+    border:2px solid  var(--secondary-color-opacity);
+    background-color: transparent;
+    color:var(--secondary-color-opacity);
+}
+
+.btn_logout{
+    position: absolute;
+    top:1rem;
+    right: 1.5rem;
+    width: 6rem;
+}
+
+.pageTitle{
+    color: var(--secondary-color);
+    font-size:1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+}
+.formInputs, .formOptions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    align-self: center;
+}
+
+.input{
+    border-bottom: 1px solid var(--secondary-color-opacity);
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    font-size:1rem;
+    color:var(--secondary-color);
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.input::placeholder{
+    color:var(--secondary-color-opacity);
+    font-weight: 500;
+}
+
+.variantLoginPage,.variantSignUpPage{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.productList{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    gap:1.5rem;
+}
+
+.emptyContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+.empty{
+    transform: scale(1.2);
+}
+
+.emptyContainer span{
+    color:var(--secondary-color-opacity);
+    font-weight: 600;
+    text-align: center;
+}
+
+.productForm{
+    height: 40rem;
+}
+
+.textarea{
+    height: 5rem;
+}
+
+.pagination{
+    width: 100%;
+    padding:2rem;
+    background-color:transparent;
+    position: relative;
+    bottom:0rem;
+    display:flex;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+@media (min-width: 768px) {
+    .form{
+        padding: 2rem 2rem;
+        width: 30rem;
+        border-radius:0.5rem;
+        background-color:var(--primary-color);
+    }
+    .productList{
+        justify-content: flex-start;
+        grid-template-columns:repeat(5, 0.5fr);
+        padding: 0 2rem;
+    }
+    #app, #login, #signup, #productDetails{
+        gap:2rem;
+        padding-bottom: 4rem;
+    }
+    .btn_logout{
+        top:2.1rem;
+        right: 25rem;
+        width: 6rem;
+    }
+
+    .pagination{
+        right: 0;
+        width: 40%;
+        top:0;
+
+    }
+    
+}
